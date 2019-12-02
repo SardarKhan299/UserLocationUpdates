@@ -364,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int whichButton) {
                 String fileName = edittext.getText().toString();
                 if(!TextUtils.isEmpty(fileName)) {
-                    renameFile(FileName,fileName);
+                    renameFile(FileName,fileName+".txt");
                 }
             }
         });
