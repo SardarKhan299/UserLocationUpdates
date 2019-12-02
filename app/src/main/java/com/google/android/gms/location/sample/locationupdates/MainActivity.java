@@ -466,7 +466,7 @@ public class MainActivity extends AppCompatActivity {
             mLastUpdateTimeTextView.setText(String.format(Locale.ENGLISH, "%s: %s",
                     mLastUpdateTimeLabel, mLastUpdateTime));
             // TODO: Save Data in File and Rename it When Stop Button Clicked...//
-            String text = " \n Latitude: " + mCurrentLocation.getLatitude() + " -  Longitude: " + " - Time:" + mLastUpdateTime;
+            String text = " \n Latitude: " + mCurrentLocation.getLatitude() + " ,  Longitude: " + mCurrentLocation.getLongitude() +" , Time:" + mLastUpdateTime;
             Log.d(TAG, "updateLocationUI: "+text);
             requestPermissionFile(text);
         }
